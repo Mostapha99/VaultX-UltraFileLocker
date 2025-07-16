@@ -3,8 +3,6 @@ workflows:
     name: Vault X - Ultra File Locker
     max_build_duration: 120
     instance_type: mac_mini_m1
-    integrations:
-      app_store_connect: codemagic
     environment:
       groups:
         - google_play
@@ -62,89 +60,3 @@ workflows:
         credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
         track: $GOOGLE_PLAY_TRACK
         submit_as_draft: true
-
-  android-vault-x-debug:
-    name: Vault X - Debug Build
-    max_build_duration: 60
-    instance_type: linux_x2
-    environment:
-      java: 17
-      node: 16
-    scripts:
-      - name: Set up local.properties
-        script: |
-          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
-      
-      - name: Build debug APK
-        script: |
-          cd $CM_BUILD_DIR
-          ./gradlew assembleDebug
-      
-      - name: Run unit tests
-        script: |
-          cd $CM_BUILD_DIR
-          ./gradlew testDebugUnitTest
-        test_report: app/build/test-results/testDebugUnitTest/TEST-*.xml
-      
-      - name: Run lint checks
-        script: |
-          cd $CM_BUILD_DIR
-          ./gradlew lintDebug
-    
-    artifacts:
-      - app/build/outputs/**/*.apk
-      - app/build/reports/lint-results-debug.html
-    
-    publishing:
-      email:
-        recipients:
-          - developer@vaultx.com
-        notify:
-          success: true
-          failure: true
-
-  android-vault-x-test:
-    name: Vault X - Test Suite
-    max_build_duration: 45
-    instance_type: linux_x2
-    environment:
-      java: 17
-    scripts:
-      - name: Set up local.properties
-        script: |
-          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
-      
-      - name: Run all unit tests
-        script: |
-          cd $CM_BUILD_DIR
-          ./gradlew test
-        test_report: "**/build/test-results/test*/TEST-*.xml"
-      
-      - name: Run lint analysis
-        script: |
-          cd $CM_BUILD_DIR
-          ./gradlew lint
-      
-      - name: Generate test coverage report
-        script: |
-          cd $CM_BUILD_DIR
-          ./gradlew jacocoTestReport
-      
-      - name: Run security analysis
-        script: |
-          cd $CM_BUILD_DIR
-          ./gradlew dependencyCheckAnalyze
-    
-    artifacts:
-      - "**/build/reports/tests/**"
-      - "**/build/reports/lint-results*.html"
-      - "**/build/reports/jacoco/**"
-      - "**/build/reports/dependency-check-report.html"
-    
-    publishing:
-      email:
-        recipients:
-          - developer@vaultx.com
-        notify:
-          success: true
-          failure: true
