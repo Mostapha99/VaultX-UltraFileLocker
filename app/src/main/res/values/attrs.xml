@@ -21,8 +21,7 @@
     <attr name="windowNoTitle" format="boolean" />
     <attr name="windowActionModeOverlay" format="boolean" />
     <attr name="windowDrawsSystemBarBackgrounds" format="boolean" />
-    <attr name="android:textAppearance" format="reference" />
-    
+
     <!-- مثال على تعريف خاصية بأكثر من نوع -->
     <attr name="customSize" format="dimension|reference" />
 </resources>
