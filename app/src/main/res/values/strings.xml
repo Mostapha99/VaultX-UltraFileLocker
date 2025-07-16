@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vault X</string>
+    <string name="app_description">Ultra File Locker</string>
+    
+    <!-- Authentication -->
+    <string name="enter_pin">أدخل رمز PIN</string>
+    <string name="setup_pin">إعداد رمز PIN</string>
+    <string name="pin_description">اختر رمز PIN مكون من 4 أرقام</string>
+    <string name="use_biometric">استخدام البصمة</string>
+    <string name="biometric_prompt_title">تأكيد الهوية</string>
+    <string name="biometric_prompt_subtitle">استخدم بصمتك لفتح Vault X</string>
+    <string name="biometric_prompt_description">ضع إصبعك على مستشعر البصمة</string>
+    
+    <!-- Main Screen -->
+    <string name="your_vaults">خزائنك</string>
+    <string name="add_new_vault">إضافة خزانة جديدة</string>
+    <string name="settings">الإعدادات</string>
+    
+    <!-- Vault Types -->
+    <string name="personal_photos">الصور الشخصية</string>
+    <string name="videos">مقاطع الفيديو</string>
+    <string name="audio_files">الملفات الصوتية</string>
+    <string name="documents">المستندات</string>
+    <string name="secret_files">الملفات السرية</string>
+    <string name="work_files">ملفات العمل</string>
+    
+    <!-- File Types -->
+    <string name="images">صور</string>
+    <string name="video">فيديو</string>
+    <string name="audio">صوت</string>
+    <string name="misc">متنوع</string>
+    
+    <!-- Gallery -->
+    <string name="sort_by_time">ترتيب حسب الوقت</string>
+    <string name="sort_by_size">ترتيب حسب الحجم</string>
+    <string name="sort_by_name">ترتيب حسب الاسم</string>
+    <string name="sort_by_type">ترتيب حسب النوع</string>
+    <string name="grid_2x2">شبكة 2×2</string>
+    <string name="grid_3x3">شبكة 3×3</string>
+    <string name="grid_4x4">شبكة 4×4</string>
+    
+    <!-- Media Player -->
+    <string name="play">تشغيل</string>
+    <string name="pause">إيقاف مؤقت</string>
+    <string name="stop">إيقاف</string>
+    <string name="next">التالي</string>
+    <string name="previous">السابق</string>
+    <string name="volume">مستوى الصوت</string>
+    <string name="brightness">السطوع</string>
+    
+    <!-- Security -->
+    <string name="encryption_enabled">التشفير مفعل</string>
+    <string name="fake_vault_mode">وضع الخزانة الوهمية</string>
+    <string name="intruder_detection">كشف المتطفلين</string>
+    <string name="hidden_mode">الوضع المخفي</string>
+    
+    <!-- Settings -->
+    <string name="biometric_toggle">تفعيل البصمة</string>
+    <string name="lock_delay">تأخير القفل</string>
+    <string name="immediate">فوري</string>
+    <string name="one_minute">دقيقة واحدة</string>
+    <string name="five_minutes">5 دقائق</string>
+    <string name="custom">مخصص</string>
+    <string name="backup_restore">النسخ الاحتياطي والاستعادة</string>
+    <string name="change_theme">تغيير المظهر</string>
+    <string name="storage_analysis">تحليل التخزين</string>
+    
+    <!-- Themes -->
+    <string name="theme_cyberpunk">Dark Cyberpunk</string>
+    <string name="theme_glass">Light Glass</string>
+    <string name="theme_terminal">Midnight Terminal</string>
+    <string name="theme_nature">Nature Soft</string>
+    
+    <!-- AI Features -->
+    <string name="smart_categorizer">المصنف الذكي</string>
+    <string name="secure_share">المشاركة الآمنة</string>
+    <string name="ai_timer">مؤقت الذكاء الاصطناعي</string>
+    <string name="ai_wallpapers">خلفيات الذكاء الاصطناعي</string>
+    <string name="ocr_scan">مسح OCR</string>
+    
+    <!-- Common -->
+    <string name="ok">موافق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="delete">حذف</string>
+    <string name="share">مشاركة</string>
+    <string name="edit">تعديل</string>
+    <string name="save">حفظ</string>
+    <string name="loading">جاري التحميل...</string>
+    <string name="error">خطأ</string>
+    <string name="success">نجح</string>
+</resources>
+

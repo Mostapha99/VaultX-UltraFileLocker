@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Cyberpunk Theme -->
+    <color name="cyberpunk_primary">#00FFFF</color>
+    <color name="cyberpunk_secondary">#FF00FF</color>
+    <color name="cyberpunk_tertiary">#00FF00</color>
+    <color name="cyberpunk_background">#0A0A0A</color>
+    <color name="cyberpunk_surface">#1A1A1A</color>
+    <color name="cyberpunk_on_primary">#000000</color>
+    <color name="cyberpunk_on_secondary">#000000</color>
+    <color name="cyberpunk_on_background">#FFFFFF</color>
+    <color name="cyberpunk_on_surface">#FFFFFF</color>
+
+    <!-- Light Glass Theme -->
+    <color name="glass_primary">#6200EE</color>
+    <color name="glass_secondary">#03DAC6</color>
+    <color name="glass_tertiary">#018786</color>
+    <color name="glass_background">#F5F5F5</color>
+    <color name="glass_surface">#FFFFFF</color>
+    <color name="glass_on_primary">#FFFFFF</color>
+    <color name="glass_on_secondary">#000000</color>
+    <color name="glass_on_background">#000000</color>
+    <color name="glass_on_surface">#000000</color>
+
+    <!-- Midnight Terminal Theme -->
+    <color name="terminal_primary">#00FF41</color>
+    <color name="terminal_secondary">#41FF00</color>
+    <color name="terminal_tertiary">#FFFF00</color>
+    <color name="terminal_background">#000000</color>
+    <color name="terminal_surface">#111111</color>
+    <color name="terminal_on_primary">#000000</color>
+    <color name="terminal_on_secondary">#000000</color>
+    <color name="terminal_on_background">#00FF41</color>
+    <color name="terminal_on_surface">#00FF41</color>
+
+    <!-- Nature Soft Theme -->
+    <color name="nature_primary">#4CAF50</color>
+    <color name="nature_secondary">#8BC34A</color>
+    <color name="nature_tertiary">#CDDC39</color>
+    <color name="nature_background">#F1F8E9</color>
+    <color name="nature_surface">#FFFFFF</color>
+    <color name="nature_on_primary">#FFFFFF</color>
+    <color name="nature_on_secondary">#000000</color>
+    <color name="nature_on_background">#1B5E20</color>
+    <color name="nature_on_surface">#1B5E20</color>
+
+    <!-- Common colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>
+
