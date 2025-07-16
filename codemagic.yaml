@@ -6,8 +6,6 @@ workflows:
     integrations:
       app_store_connect: codemagic
     environment:
-      android_signing:
-        - keystore_reference
       groups:
         - google_play
       vars:
@@ -22,17 +20,7 @@ workflows:
       
       - name: Get Flutter packages
         script: |
-          # This is for Android native project, no Flutter needed
           echo "Android native project - skipping Flutter setup"
-      
-      - name: Set up key.properties
-        script: |
-          cat >> "$CM_BUILD_DIR/android/key.properties" <<EOF
-          storePassword=$CM_KEYSTORE_PASSWORD
-          keyPassword=$CM_KEY_PASSWORD
-          keyAlias=$CM_KEY_ALIAS
-          storeFile=$CM_KEYSTORE_PATH
-          EOF
       
       - name: Build Android APK
         script: |
@@ -160,4 +148,3 @@ workflows:
         notify:
           success: true
           failure: true
-
