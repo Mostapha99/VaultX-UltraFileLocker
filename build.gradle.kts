@@ -1,9 +1,22 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.2.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.10")
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.48.1") // تم تحديث الإصدار هنا
+    }
+}
+
 plugins {
     id("com.android.application") version "8.2.0" apply false
     id("com.android.library") version "8.2.0" apply false
     id("org.jetbrains.kotlin.android") version "1.9.10" apply false
     id("org.jetbrains.kotlin.kapt") version "1.9.10" apply false
-    id("com.google.dagger.hilt.android") version "2.48" apply false
+    id("com.google.dagger.hilt.android") version "2.48.1" apply false // تم تحديث الإصدار هنا
     id("io.gitlab.arturbosch.detekt") version "1.23.1" apply false
     id("org.jlleitschuh.gradle.ktlint") version "11.6.1" apply false
 }
