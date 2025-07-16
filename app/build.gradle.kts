@@ -85,11 +85,12 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.48")
     kapt("com.google.dagger:hilt-compiler:2.48")
 
-    // مكتبة Material3 الضرورية للثيمات والألوان
-    implementation("com.google.android.material:material:1.10.0-beta01")
+    // Material Design 3 (Compose)
+    implementation("androidx.compose.material3:material3:1.2.1")
+    implementation("androidx.compose.material3:material3-window-size-class:1.1.1")
 
-    // إذا كنت تستعمل Jetpack Compose Material3 (اختياري)
-    implementation("androidx.compose.material3:material3:1.1.0")
+    // مكتبة Material Design XML (اختياري إذا كنت تستعمل XML layouts)
+    implementation("com.google.android.material:material:1.11.0")
 
-    // أضف باقي dependencies اللي عندك هنا
+    // أضف باقي dependencies هنا حسب الحاجة
 }
