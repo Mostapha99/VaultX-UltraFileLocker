@@ -47,13 +47,11 @@ android {
         buildConfig = true
     }
     composeOptions {
-        // تحديث إصدار كومبايلر Compose
         kotlinCompilerExtensionVersion = "1.5.8"
     }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
-            // حل مشكلة TensorFlow
             excludes += "META-INF/*"
         }
     }
@@ -69,8 +67,4 @@ dependencies {
     implementation(project(":features:settings"))
     implementation(project(":features:vault_gallery"))
 
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
-    implementation("androidx.activity:activity-compose:1.8.2")
-    
-    // تحديث إصدار BOM وإضافة تبعيات Material3 الم
+    implementation("androidx.core:core-ktx:1.12
