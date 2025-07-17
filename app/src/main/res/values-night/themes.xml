@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for night mode. -->
+    <style name="Theme.VaultXUltraFileLocker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Cyberpunk theme for night mode -->
+        <item name="colorPrimary">@color/cyberpunk_primary</item>
+        <item name="colorOnPrimary">@color/cyberpunk_on_primary</item>
+        <item name="colorPrimaryContainer">@color/cyberpunk_primary</item>
+        <item name="colorOnPrimaryContainer">@color/cyberpunk_on_primary</item>
+        <item name="colorSecondary">@color/cyberpunk_secondary</item>
+        <item name="colorOnSecondary">@color/cyberpunk_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/cyberpunk_secondary</item>
+        <item name="colorOnSecondaryContainer">@color/cyberpunk_on_secondary</item>
+        <item name="colorTertiary">@color/cyberpunk_tertiary</item>
+        <item name="colorOnTertiary">@color/cyberpunk_on_primary</item>
+        <item name="colorTertiaryContainer">@color/cyberpunk_tertiary</item>
+        <item name="colorOnTertiaryContainer">@color/cyberpunk_on_primary</item>
+        <item name="colorError">@android:color/holo_red_light</item>
+        <item name="colorErrorContainer">@android:color/holo_red_dark</item>
+        <item name="colorOnError">@android:color/white</item>
+        <item name="colorOnErrorContainer">@android:color/white</item>
+        <item name="colorBackground">@color/cyberpunk_background</item>
+        <item name="colorOnBackground">@color/cyberpunk_on_background</item>
+        <item name="colorSurface">@color/cyberpunk_surface</item>
+        <item name="colorOnSurface">@color/cyberpunk_on_surface</item>
+        <item name="colorSurfaceVariant">@color/cyberpunk_surface</item>
+        <item name="colorOnSurfaceVariant">@color/cyberpunk_on_surface</item>
+        <item name="colorOutline">@color/cyberpunk_primary</item>
+        <item name="colorOutlineVariant">@color/cyberpunk_secondary</item>
+        <item name="colorSurfaceInverse">@color/cyberpunk_on_surface</item>
+        <item name="colorOnSurfaceInverse">@color/cyberpunk_surface</item>
+        <item name="colorPrimaryInverse">@color/cyberpunk_on_primary</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/cyberpunk_primary</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/cyberpunk_background</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o">false</item>
+
+        <!-- Window flags -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+</resources>
