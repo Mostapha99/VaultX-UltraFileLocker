@@ -73,4 +73,18 @@ dependencies {
     implementation(project(":features:vault_gallery"))
 
     implementation("androidx.core:core-ktx:1.12.0")
+    
+    // Hilt dependencies - تمت إضافتها لحل المشكلة
+    implementation("com.google.dagger:hilt-android:2.48.1")
+    kapt("com.google.dagger:hilt-compiler:2.48.1")
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+}
+
+// تمت إضافة هذا القسم لحل مشكلة Hilt
+kapt {
+    correctErrorTypes = true
+}
+
+hilt {
+    enableAggregatingTask = true
 }
